@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure Poppins font is applied */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-grid-pattern {
+  background-image: radial-gradient(circle, #333 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
