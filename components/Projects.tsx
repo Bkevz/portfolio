@@ -23,6 +23,30 @@ const Projects = () => {
       gradient: 'from-orange-500/20 to-red-500/20',
       category: 'API Management',
       stack: 'Express + MongoDB'
+    },
+    {
+      title: 'Turkana County Public Service Board',
+      description: 'Collaborative applicantions management app with real-time updates and notifications.',
+      tech: ['NextJs', 'Node.js', 'Twillio'],
+      gradient: 'from-pink-500/20 to-fuchsia-500/20',
+      category: 'Task Management',
+      stack: 'Next.js + Node.js + Twillio'
+    },
+    {
+      title: 'Innobid Procurement',
+      description: 'E-procurement system',
+      tech: ['NextJs', 'Node.js', 'CrewAI'],
+      gradient: 'from-pink-500/20 to-fuchsia-500/20',
+      category: 'Task Management',
+      stack: 'Next.js + Node.js + CrewAI'
+    },
+    {
+      title: 'Biashara Pro',
+      description: 'AutoBooks AI',
+      tech: ['NextJs', 'Node.js', 'FastAPI'],
+      gradient: 'from-pink-500/20 to-fuchsia-500/20',
+      category: 'Business Automation',
+      stack: 'Next.js + Node.js + FastApi'
     }
   ]
 

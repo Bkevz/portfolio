@@ -8,7 +8,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Alex Chen - Full Stack Developer',
+  title: 'Amoni Kevin - Full Stack Developer',
   description: 'Full Stack Developer building fast, scalable web applications with modern technologies.',
 }
 
