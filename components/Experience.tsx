@@ -1,24 +1,24 @@
 const Experience = () => {
   const experiences = [
     {
-      title: 'Senior Full Stack Developer',
-      company: 'TechFlow Solutions',
+      title: 'Co-Founder & Lead Developer',
+      company: 'Agiza, Shop4me, Innobid & MKiba',
       period: '2022 — Present',
-      description: 'Leading development of scalable web applications. Built microservices architecture reducing load times by 40%.'
+      description: 'Building and scaling multiple SaaS platforms: restaurant management (Agiza), e-commerce delivery (Shop4me), AI procurement (Innobid), and financial services (MKiba). Leading full-stack development with Next.js, FastAPI, and implementing DevOps with Docker, Prometheus, and Grafana.'
     },
     {
       title: 'Full Stack Developer',
-      company: 'Digital Innovations Inc',
-      period: '2020 — 2021',
-      description: 'Developed e-commerce platforms handling millions in transactions with modern JavaScript frameworks.'
+      company: 'Tech Ventures',
+      period: '2020 — 2022',
+      description: 'Developed scalable web applications using React, TypeScript, and Python. Built microservices architecture and implemented CI/CD pipelines. Worked on e-commerce platforms handling high-volume transactions.'
     }
   ]
 
   const stats = [
     { value: '5+', label: 'Years Experience' },
-    { value: '50+', label: 'Projects Completed' },
-    { value: '100K+', label: 'Users Served' },
-    { value: '24/7', label: 'Uptime Maintained' }
+    { value: '4', label: 'Startups Co-Founded' },
+    { value: '10K+', label: 'Active Users' },
+    { value: '99.9%', label: 'Uptime Maintained' }
   ]
 
   return (

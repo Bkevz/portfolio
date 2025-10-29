@@ -1,52 +1,40 @@
 const Projects = () => {
   const projects = [
     {
-      title: 'E-commerce Platform',
-      description: 'Scalable platform handling 100K+ users with real-time inventory and payment processing.',
-      tech: ['React', 'Node.js', 'AWS'],
+      title: 'Agiza',
+      description: 'A comprehensive restaurant management system with real-time order processing, inventory tracking, and analytics.',
+      tech: ['React', 'TypeScript', 'Python', 'FastAPI', 'Redis', 'Docker', 'PostgreSQL'],
       gradient: 'from-blue-500/20 to-purple-500/20',
-      category: 'E-commerce Platform',
-      stack: 'Next.js + Stripe'
+      category: 'Restaurant Management',
+      stack: 'React + FastAPI + PostgreSQL',
+      link: 'https://agiza-blond.vercel.app/'
     },
     {
-      title: 'Analytics Dashboard',
-      description: 'Real-time dashboard for SaaS companies with comprehensive business insights.',
-      tech: ['Next.js', 'TypeScript', 'D3.js'],
+      title: 'Shop4me',
+      description: 'Shopping and delivery application for users who prefer not to visit markets. Features real-time order tracking and delivery management.',
+      tech: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL'],
       gradient: 'from-green-500/20 to-emerald-500/20',
-      category: 'Analytics Dashboard',
-      stack: 'React + D3.js'
+      category: 'E-commerce & Delivery',
+      stack: 'Next.js Fullstack + Prisma',
+      link: 'https://shop4me-lilac.vercel.app/'
     },
     {
-      title: 'API Management Tool',
-      description: 'Developer tool for API documentation with automatic generation and testing.',
-      tech: ['React', 'Express', 'MongoDB'],
+      title: 'Innobid',
+      description: 'AI-powered procurement streamlining platform that automates and optimizes the procurement process with intelligent insights.',
+      tech: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'AI'],
       gradient: 'from-orange-500/20 to-red-500/20',
-      category: 'API Management',
-      stack: 'Express + MongoDB'
+      category: 'AI Procurement',
+      stack: 'Next.js Fullstack + AI',
+      link: 'https://innobid.net/'
     },
     {
-      title: 'Turkana County Public Service Board',
-      description: 'Collaborative applicantions management app with real-time updates and notifications.',
-      tech: ['NextJs', 'Node.js', 'Twillio'],
+      title: 'MKiba',
+      description: 'Comprehensive financial services platform with integrated monitoring and observability. Features real-time metrics, visualization dashboards, and complete financial management.',
+      tech: ['FastAPI', 'Next.js', 'TypeScript', 'SQLAlchemy', 'Prometheus', 'Grafana', 'Docker'],
       gradient: 'from-pink-500/20 to-fuchsia-500/20',
-      category: 'Task Management',
-      stack: 'Next.js + Node.js + Twillio'
-    },
-    {
-      title: 'Innobid Procurement',
-      description: 'E-procurement system',
-      tech: ['NextJs', 'Node.js', 'CrewAI'],
-      gradient: 'from-pink-500/20 to-fuchsia-500/20',
-      category: 'Task Management',
-      stack: 'Next.js + Node.js + CrewAI'
-    },
-    {
-      title: 'Biashara Pro',
-      description: 'AutoBooks AI',
-      tech: ['NextJs', 'Node.js', 'FastAPI'],
-      gradient: 'from-pink-500/20 to-fuchsia-500/20',
-      category: 'Business Automation',
-      stack: 'Next.js + Node.js + FastApi'
+      category: 'Financial Services',
+      stack: 'FastAPI + Next.js + Prometheus',
+      link: '#'
     }
   ]
 
@@ -58,9 +46,12 @@ const Projects = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
-              <div 
+              <a 
                 key={index}
-                className="group bg-vercel-card border border-vercel-border rounded-xl overflow-hidden hover:border-vercel-accent transition-all duration-300 hover:transform hover:scale-105"
+                href={project.link}
+                target={project.link !== '#' ? '_blank' : '_self'}
+                rel={project.link !== '#' ? 'noopener noreferrer' : ''}
+                className="group bg-vercel-card border border-vercel-border rounded-xl overflow-hidden hover:border-vercel-accent transition-all duration-300 hover:transform hover:scale-105 cursor-pointer"
               >
                 <div className={`h-48 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
                   <div className="absolute inset-0 bg-grid-pattern opacity-20"></div>
@@ -72,7 +63,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="p-6 space-y-4">
-                  <h3 className="text-lg font-semibold">{project.title}</h3>
+                  <h3 className="text-lg font-semibold group-hover:text-vercel-accent transition-colors">{project.title}</h3>
                   <p className="text-vercel-text text-sm leading-relaxed">
                     {project.description}
                   </p>
@@ -87,7 +78,7 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

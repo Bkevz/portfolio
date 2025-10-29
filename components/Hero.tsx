@@ -23,10 +23,10 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight bg-gradient-to-r from-white to-vercel-text bg-clip-text text-transparent">
-              Full Stack Developer
+              Full Stack Developer & Co-Founder
             </h1>
             <p className="text-xl text-vercel-text max-w-xl leading-relaxed">
-              I build fast, scalable web applications with modern technologies. Currently based in Nairobi, Kenya.
+              I build fast, scalable applications with modern technologies. Specializing in Next.js, FastAPI, and AI-powered solutions. Co-founder of innovative platforms in restaurant management, e-commerce, procurement, and fintech.
             </p>
             <div className="flex flex-col sm:flex-row items-start gap-4 pt-6">
               <button 
@@ -54,11 +54,13 @@ const Hero = () => {
                 <div className="w-3 h-3 bg-green-500 rounded-full"></div>
               </div>
               <div className="mt-8 space-y-3 font-mono text-sm">
-                <div className="text-purple-400">const developer = </div>
+                <div className="text-purple-400">const developer = {'{'}</div>
                 <div className="ml-4 text-vercel-text">name: <span className="text-green-400">'Amoni Kevin'</span>,</div>
-                <div className="ml-4 text-vercel-text">skills: [<span className="text-blue-400">'React', 'Node.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'Firebase', 'Stripe', 'Figma'</span>],</div>
-                <div className="ml-4 text-vercel-text">experience: <span className="text-orange-400">5</span>,</div>
-                <div className="text-purple-400"></div>
+                <div className="ml-4 text-vercel-text">role: <span className="text-green-400">'Full Stack Developer & Co-Founder'</span>,</div>
+                <div className="ml-4 text-vercel-text">skills: [<span className="text-blue-400">'Next.js', 'React', 'TypeScript', 'FastAPI', 'Python', 'PostgreSQL', 'Prisma', 'Redis', 'Docker', 'Prometheus', 'Grafana'</span>],</div>
+                <div className="ml-4 text-vercel-text">experience: <span className="text-orange-400">5+</span>,</div>
+                <div className="ml-4 text-vercel-text">projects: [<span className="text-yellow-400">'Agiza', 'Shop4me', 'Innobid', 'MKiba'</span>]</div>
+                <div className="text-purple-400">{'}'}</div>
               </div>
             </div>
           </div>
